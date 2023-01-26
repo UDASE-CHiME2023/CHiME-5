@@ -1,0 +1,101 @@
+[
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "4",
+  "start": "0:29:36.86",
+  "end": "0:29:41.33",
+  "duration": 4.470000000000027,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "5",
+  "start": "0:30:24.32",
+  "end": "0:30:27.84",
+  "duration": 3.519999999999982,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "6",
+  "start": "0:50:28.63",
+  "end": "0:50:32.02",
+  "duration": 3.3899999999998727,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "8",
+  "start": "1:23:30.23",
+  "end": "1:23:36.41",
+  "duration": 6.180000000000291,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "9",
+  "start": "1:24:06.14",
+  "end": "1:24:09.14",
+  "duration": 3.0,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "10",
+  "start": "1:24:24.05",
+  "end": "1:24:33.20",
+  "duration": 9.149999999999636,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "11",
+  "start": "1:24:34.02",
+  "end": "1:24:37.92",
+  "duration": 3.899999999999636,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "12",
+  "start": "1:24:46.90",
+  "end": "1:24:54.33",
+  "duration": 7.430000000000291,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "13",
+  "start": "1:25:10.01",
+  "end": "1:25:13.37",
+  "duration": 3.3599999999996726,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "14",
+  "start": "1:26:03.71",
+  "end": "1:26:08.73",
+  "duration": 5.019999999999527,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ },
+ {
+  "max_num_simultaneously_active_spk": 0,
+  "mix": "15",
+  "start": "1:26:13.47",
+  "end": "1:26:17.44",
+  "duration": 3.969999999999345,
+  "left_channel_ok": "True",
+  "right_channel_ok": "True"
+ }
+]

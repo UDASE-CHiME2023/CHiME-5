@@ -1,0 +1,12 @@
+name: CHiME
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - conda
+  - python=3.8
+  - pysoundfile
+  - librosa
+  - matplotlib
+  - pandas
+  - seaborn

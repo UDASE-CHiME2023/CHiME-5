@@ -49,9 +49,7 @@ The audio segments were extracted for each microphone recording associated with 
 - recordings with both defective microphones were not extracted, but those with only one defective microphone were (Note: the defective microphones are indicated in the json files);
 - unlike the repartition of the CHiME data, we put the S07 and S17 sessions (initially in the train dataset) in the dev dataset in order to increase the noise data [0] duration which was insufficient;
 - [Brouhaha VAD](https://github.com/marianne-m/brouhaha-vad) was used to clean the audio segments and estimate the SNR (feel free to use the results when participating to the challenge!):
-    - for dev/0 data: an audio segment is not included when speech is detected in at least 3 recordings (among the 4 microphones placed on each participant), when the average SNR of these recordings is greater than 0 and when the average percentage of speech (vs. silence) is greater than 10%;
-    - for dev/1 data: an audio segment is not included when no speech is detected.
-    - ```brouhaha_vad_snr.csv``` in [brouhaha_vad_snr.zip](metrics/brouhaha/brouhaha_vad_snr.zip) contains the SNR and VAD output for each audio files with a frame rate of 16.875 ms;
+    - ```brouhaha_vad_snr.csv``` in [brouhaha_vad_snr.zip](metrics/brouhaha/brouhaha_vad_snr.zip) contains the SNR and VAD output for each audio files with a sampling period of 16.875 ms;
     - [brouhaha_mean_results.csv](metrics/brouhaha/brouhaha_results.csv) contains Brouhaha mean outputs metrics (mean SNR, speech duration, speech percentage, etc.).
     - [brouhaha_results.csv](metrics/brouhaha/brouhaha_results.csv) contains Brouhaha outputs used when cleaning the audio files.
     - you will find more informations on Brouhaha results in [load_brouhaha_results.ipynb](load_brouhaha_results.ipynb).

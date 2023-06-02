@@ -39,10 +39,13 @@ The audio segments were extracted for each binaural microphone recording associa
     - [1] we extract all segments that were not extracted before and with at most one active speaker (the active speaker might change in a segment, but we do not have overlap between different speakers);
     - [2] we extract all segments that were not extracted before and with at most two simultaneously active speakers (again, the active speakers might change in a segment, we care only about the max number of simultaneously active speakers);
     - [3] we extract all segments that were not extracted before and with at most three simultaneously active speakers.
+* **Eval data:** 
+    - [0/1/2/3] we extract segments using the same method as for the dev data;
+    - [listening_test] we extract segments used for the listening tests.
 
 **Notes:**
 - by default, only the right channel is extracted. The ```--extract_stereo``` option allows to extract both left and right channels. Note that the right channel works correctly in all extracted audio segments, unlike the left channel. The working state of the microphones is indicated in the json files;
-- the option ```--train_only``` allows to save only the train segments;
+- the options ```--train_only``` and ```--eval_only``` allow to save only the train and the eval segments respectively;
 - we remove the parts of the audio where the participant wearing the microphone is talking (according to the manual transcription);
 - manual transcription is also used to split the dev data into [0], [1], [2] and [3];
 - the retained segments have a duration greater than 3 seconds;

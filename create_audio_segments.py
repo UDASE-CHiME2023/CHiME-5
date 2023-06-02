@@ -41,6 +41,7 @@ def parse_args():
     parser.add_argument("--train_10s", help="Slice the train unlabeled audio segments in chunks of 10s.", action='store_true')
     parser.add_argument("--train_vad", help="Only extract audio segments in train where voice has been detected by Brouhaha VAD.", action='store_true')
     parser.add_argument("--train_only", help="Only extract audio segments in train (not dev).", action='store_true')
+    parser.add_argument("--eval_only", help="Only extract audio segments in eval.", action='store_true')
 
     args=parser.parse_args()
     return args
@@ -77,6 +78,9 @@ def main():
         if args.train_only and split != 'train':
             continue
         
+        if args.eval_only and split != 'eval':
+            continue
+
         audio_paths = glob.glob(f'{orig_data_path}/audio/*/{session}_{ref_spk}.wav')
         assert len(audio_paths) == 1
         audio_path = audio_paths[0]
@@ -106,7 +110,7 @@ def main():
             output_filename = session + '_' + ref_spk + '_' + mix_ind
 
             if not os.path.exists(os.path.join(output_path, output_filename)):
-                if split in ['eval', 'dev']:
+                if split == 'dev':
                     assert segment['max_num_simultaneously_active_spk'] == int(num_active_spk)
                 
                 start_str = segment['start']

@@ -2,7 +2,7 @@
 
 This repository contains instructions for retrieving the unlabeled data needed for the UDASE task of the CHiME-7 challenge.
 
-You must first download the [CHiME-5 data](https://spandh.dcs.shef.ac.uk//chime_challenge/CHiME5/download.html).
+You must first download the [CHiME-5 data](https://www.chimechallenge.org/datasets/chime5).
 
 ## Installation
 

@@ -4,6 +4,9 @@ This repository contains instructions for retrieving the unlabeled data needed f
 
 You must first download the [CHiME-5 data](https://www.chimechallenge.org/datasets/chime5).
 
+If you use this code in your research, please cite:
+> Leglaive, S., Borne, L., Tzinis, E., Sadeghi, M., Fraticelli, M., Wisdom, S., Pariente, M., Pressnitzer, D., & Hershey, J. R. (2023). The CHiME-7 UDASE task: Unsupervised domain adaptation for conversational speech enhancement. In 7th International Workshop on Speech Processing in Everyday Environments (CHiME).
+
 ## Installation
 
 ```
